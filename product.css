@@ -1,0 +1,186 @@
+@font-face{
+	font-family: "Quicksand";
+	src: url(/resources/fonts/Quicksand_Book.otf} format('truetype');
+}
+
+html{
+font-family: "Gujarati Sangam MN";
+font-size: 1vw;
+font-family:"Quicksand";
+}
+
+a{
+	color: black;
+}
+
+a:link{
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #BD4444;
+}
+
+a:active{
+	text-decoration: underline;
+}
+
+body{
+	margin: 0rem;
+}
+
+/* top bar */
+
+.orangebar{
+background: #FFE9DD;
+height: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 100%
+}
+
+.orangetext{
+	color: #D08062;
+}
+
+/*logo bar*/
+.logobar{
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: solid;color: #E0E0E0;
+    border-width: 0.1rem;
+    width: 100%
+}
+
+.logobartext{
+	margin-left: 25rem;
+font-size: 1.5rem;
+word-spacing: 2rem;
+padding-top: 0.5rem;
+}
+
+#logo{
+	height: 6rem;
+margin-left: 1rem; 
+}
+
+.iteminfo{
+	    display: flex;
+    align-items: center;
+}
+/*Add to cart*/
+
+.info-left{
+	width: 60%;
+    margin-right: 1.5rem;
+}
+
+.info-right{
+	    display: flex;
+    flex-direction: column;
+}
+
+.info{
+display: flex;
+align-items: center;
+}
+
+.sidebar{
+	background: #FFE9DD;
+height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+    box-shadow: none;
+    border: none;
+}
+
+.search{
+  box-sizing: border-box;
+  font-size: 2rem;
+  
+}
+
+input[type=text2]{
+padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.myacc{
+display: flex;
+}
+
+.myacctext{
+font-family: "Quicksand";
+font-size: 1.5rem;
+padding-top: 0.7rem;
+padding-right: 1.5rem;
+width: 9rem;
+}
+
+#icon{
+height: 2rem;
+margin-right: 3rem;
+padding-top: 0.1rem;
+}
+
+
+.description{
+	width: 25rem;
+}
+
+/* footer */
+
+
+.footercolumn {
+  width: 13%;
+  padding: 3rem;
+text-align: center;
+}
+
+.footer{
+background-color: #FDEBE2;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100% 
+}
+
+#ig{
+height: 2rem;
+margin-top: 1rem;
+}
+
+#footerlogo{
+width: 155%;
+padding:3.5rem;
+}
+
+.footertitle{
+border-bottom: solid;color: black;
+border-width: 0.1rem;
+
+}
+
+.marginclass{
+margin-left: 5rem;
+margin-right: 5rem;
+
+}
+
+.footerrow{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  width: 98%
+}
+
