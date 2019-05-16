@@ -455,6 +455,7 @@ height: auto;
 .exploretitle{
 	justify-content: center;
 	padding: 3rem;
+	padding-bottom: 0rem;
 }
 
 .exploretitle img{
@@ -464,6 +465,17 @@ width: 63%;
   margin-right: auto;
 }
 
+.vendors{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.vendors p{
+	font-size: 1.5rem;
+	font-family: QuickSand;
+}
 .displayPopout{
 	top: 0px;
     left: 0px;
