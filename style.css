@@ -297,6 +297,7 @@ text-align: center;
 	text-align: center;
 }
 
+
 /* mailing list */
 
 
@@ -398,6 +399,13 @@ border-width: 0.1rem;
 
 /* popoutpage*/
 
+.popout{
+	display: block;
+	    z-index: 20;
+    height: 100vw;
+    overflow-y: scroll
+}
+
 
 .title{
 	font-size: 3rem;
@@ -419,6 +427,7 @@ border-width: 0.1rem;
 }
 .more p{
 	padding-left: 8rem;
+	background: white;
 }
 
 .Products p{
@@ -482,6 +491,9 @@ width: 63%;
     position: fixed;
     background: white;
     display: none;
+        z-index: 20;
+    height: 100vw;
+    overflow-y: scroll
 }
 
 /* ---- mobile ---- */
