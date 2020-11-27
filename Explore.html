@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<title>Therapy</title>
 </head>
 
@@ -9,17 +15,28 @@
 <body>
 
 <div class="orangebar">
-			<span class="orangetext">We Donate 1% of our sales</span>
+			<span class="orangetext">We donate 1% of our sales</span>
 		</div>
 
 
-	<div class="logobardesktop">
+<div class="logobardesktop">
         <img src="resources/image/therapylogo.png" id="logo">
 		<div class="logobartext">
-			<a href="index.html">Home</a>
+			<div class="menu">
+				<a href="index.html">Home</a>
+			</div>
+			<div class="menu">
 			<a href="Explore.html">Explore</a>
-		    <a href="#">BestSellers</a>
 		</div>
+		<div class="menu">
+		    <a href="#">Best Sellers</a>
+		</div>
+		<div class="menu">
+		    <a href="#">Career</a>
+		</div>
+		</div>
+
+		<div class="leftbar">
 <div class="search">
 	<form> <input type="text2" name="search" placeholder="Search.."></form>
 </div>
@@ -28,7 +45,7 @@
 			</div>
 <div class="bagicon">
 	<img src="resources/image/bag.png" id="icon">
-
+</div>
 		</div>		
 </div>
 </div>
@@ -39,10 +56,22 @@
 
 <nav class="mobile">
 		<ul class="mobile-menu" role="presentation">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Explore</a></li>
-			<li><a href="#">My Account</a></li>
-			<li><a href="#">Bag</a></li>
+			<a href>Home</a>
+			<a href>Explore</a>
+			<a href>My Account</a>
+			<a href>Bag</a>
+			<a href>Career</a>
+		</ul>
+	</nav>
+
+<nav class="tablet">
+		<ul class="menu" role="presentation">
+			<a href>Home</a>
+			<a href>Explore</a>
+			<a href>My Account</a>
+			<a href>Bag</a>
+			<a href>Career</a>
+
 		</ul>
 	</nav>
 
@@ -52,22 +81,89 @@
 		</ul>
 	</nav>
 
-
-<div class="bannerbg1 marginclass">
-		<img src="resources/image/map.png" class="container2"/>
-	</div>
-		</div>
-
-		<div class="exploretitle">
-			<img src="resources/image/explore.png">
+<div class="exploretitle">
+			<p>Explore our vandors by map</p>
 
 		</div>
-	<div class="vendors">
+  
+<div class="list">
+  <div class="vendors">
 		<p>1. California</p>
 			<p>2. New York </p>
 				<p> 3. Arizona </p>
 					<p> 4. Illinois </p>
 				</div>
+
+  <!-- Button to Open the Modal -->
+
+
+		<img id="myImg" src="resources/image/map7.png" class="center" class="btn btn-primary" data-toggle="modal" data-target="#myModal"/>
+		</div>
+
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Brooklyn Charm</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        	<div class="info">
+        		<div class="infocolumn">
+
+
+	<p>At Brooklyn Charm, you are the designer. With hundreds of chains and thousands of charms, each design is unique. Whether we are assembling a piece of jewelry for you or you are taking the supplies home to make your own jewelry: you are guaranteed to walk away with an individualized creation.
+
+Brooklyn Charm opened its storefront in 2010 in the heart of the Williamsburg area of Brooklyn, NY. It also operates pop up booths in various New York arts-and-crafts festivals and markets throughout the year.</p> 
+</div>
+
+<div class="imgcolumn">
+	<img src="resources/image/ny.png" style="width: 50%">
+</div>
+</div>
+</div>
+        <div class="modal-header">
+	          <h4 class="modal-title">Products from this vendor</h4>
+</div>
+
+<div class="Products">
+	<div class="rowx">
+  <div class="columnx">
+    <img src="resources/image/p1.JPG" id="p1" style="width:100%"> <p style="margin-top: 1rem;">Round Necklace</p>
+
+  </div>
+  <div class="columnx">
+    <a href="product_ring.html"><img src="resources/image/p2.JPG" id="p2"  style="width:100%"> <p style="margin-top: 
+    1rem;">Ring</p></a>
+  </div>
+  <div class="columnx">
+    <img src="resources/image/p3.JPG" id="p3" style="width:100%"><p style="margin-top: 1rem;">Earing</p>
+</div>
+<div class="columnx">
+    <img src="resources/image/p4.JPG" id="p4" style="width:100%"><p style="margin-top: 1rem;">Round earing</p>
+</div>
+</div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+		
+	
 
 				<footer>
 		<div class="footer ">
@@ -113,4 +209,6 @@
 			<img src="resources/image/therapylogo.png">
 </div>
 	</footer>
+
+	
 </body>

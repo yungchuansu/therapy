@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<title>Therapy</title>
+<head>
+
+<bod>
+
+
+<div class="orangebar">
+			<span class="orangetext">We donate 1% of our sales</span>
+		</div>
+
+
+<div class="logobardesktop">
+        <img src="resources/image/therapylogo.png" id="logo">
+		<div class="logobartext">
+			<div class="menu">
+				<a href="index.html">Home</a>
+			</div>
+			<div class="menu">
+			<a href="Explore.html">Explore</a>
+		</div>
+		<div class="menu">
+		    <a href="#">Best Sellers</a>
+		</div>
+		<div class="menu">
+		    <a href="#">Career</a>
+		</div>
+		</div>
+
+		<div class="leftbar">
+<div class="search">
+	<form> <input type="text2" name="search" placeholder="Search.."></form>
+</div>
+	<div class="myacctext">
+			    <a href="#">My Account</a>
+			</div>
+<div class="bagicon">
+	<img src="resources/image/bag.png" id="icon">
+</div>
+		</div>		
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<nav class="mobile">
+		<ul class="mobile-menu" role="presentation">
+			<a href>Home</a>
+			<a href>Explore</a>
+			<a href>My Account</a>
+			<a href>Bag</a>
+			<a href>Career</a>
+		</ul>
+	</nav>
+
+<nav class="tablet">
+		<ul class="menu" role="presentation">
+			<a href>Home</a>
+			<a href>Explore</a>
+			<a href>My Account</a>
+			<a href>Bag</a>
+			<a href>Career</a>
+
+		</ul>
+	</nav>
+
+
+<div class="pdinfo">
+<div class="pdpic">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="resources/image/p2.JPG" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="resources/image/p3.JPG" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="resources/image/p4.JPG" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<div class="dotc">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+
+<div class="pdtext">
+<div class="ptitle">
+		<p>Mia Constellation Ring</p>
+		<img src="./resources/stars.png" style="width: 6rem;margin-bottom: 0.5rem;">
+		<h3>$20.00</h3>
+		<p>Size: One Size</p>
+</div>
+
+<div class="pdes">
+<p>Large gold-plated ring with your choice of font, and engraving, either a single initial or monogrammed, please enter the font style (block or script) and engraving in the comment box at checkout (sellers note). One size fits all- this ring is a must and amazing!</p>
+</div>
+
+<div class="cart">
+<input id=cartext type="text" placeholder="1">
+					<button id=bt type="addtocart" class="sidebar">Add To Cart</button>
+				</div>
+</div>
+</div>
+
+<div class="mightlike">
+	<p>You might also like..</p>
+</div>
+
+<div class="Products">
+	<div class="rowx">
+  <div class="columnx">
+    <img src="resources/image/p1.JPG" id="p1" style="width:100%"> <p style="margin-top: 1rem;">Round Necklace</p>
+
+  </div>
+  <div class="columnx">
+    <a href="Product_page.html"><img src="resources/image/p2.JPG" id="p2"  style="width:100%"> <p style="margin-top: 
+    1rem;">Ring</p></a>
+  </div>
+  <div class="columnx">
+    <img src="resources/image/p3.JPG" id="p3" style="width:100%"><p style="margin-top: 1rem;">Earing</p>
+</div>
+<div class="columnx">
+    <img src="resources/image/p4.JPG" id="p4" style="width:100%"><p style="margin-top: 1rem;">Round earing</p>
+</div>
+</div>
+        </div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<footer>
+		<div class="footer ">
+ <div class="footerrow">
+ 	<div class="footercolumn">	
+ <div class="footertitle">
+ 	Help + Info	
+ </div>
+ 	 	<div class="footerinfo">			
+<p>Order Status </p>
+<p>Shipping </p>
+<p>Orders + Payments</p>
+<p>FAQ</p>
+	</div>
+	</div>
+
+	<div class="footercolumn">	
+			<div class="footertitle">
+ 	Others		
+ </div>
+ 	 	<div class="footerinfo">		
+<p>Career</p>
+<p>About Us</p>
+<p>Giving</p>
+<p>Gift Cards</p>
+<p>Locations</p>
+	</div>
+</div>
+
+	<div class="footercolumn">	
+	<div class="footertitle">
+ 	Find us on	
+ </div>
+ 	<div class="footerinfo">	
+<img src="resources/image/ig.png" id="ig">
+
+</div>
+</div>
+</div>
+
+
+	<div class="footerlogo">	
+			<img src="resources/image/therapylogo.png">
+</div>
+	</footer>
+
+
+
+
+
+</body>
+</html>

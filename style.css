@@ -7,6 +7,228 @@ html{
 
 
 
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  height: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+      color: #f2f2f2;
+    font-size: 15px;
+    /* padding: 0.3rem; */
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 0.5rem;
+  width: 0.5rem;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.fade:not(.show){
+	opacity: 1;
+}
+
+.dotc{
+	text-align: center;
+}
+
+
+
+/*productpage*/
+
+
+.pdinfo{
+	display: flex;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+    margin: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+}
+
+.pdpic{
+width: 35%;
+margin: 1rem;
+	text-align: left;
+	font-size: 1.2rem;
+	padding-top: 2rem;
+}
+.pdtext{
+ width: 60%;
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.ptitle{
+	text-align: left;
+
+}
+.ptitle h1{
+	text-align: left;
+	font-family: "Quicksand"
+	
+}
+.ptitle h3{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	
+}
+
+.ptitle p{
+	font-size: 1rem;
+}
+
+.pdes{
+	width: 76%;
+}
+.pdes p{
+	text-align: left;
+	margin-bottom: 2rem;
+
+}
+
+.cart {
+text-align: left;
+
+}
+
+#cartext{
+	width: 3rem;
+    margin-bottom: 1rem;
+    height: 2rem;
+    text-align: center;
+        margin-right: 1rem;
+        margin: 0rem;
+
+}
+
+#bt{
+
+margin-left: 1rem;
+}
+
+
+.mightlike{
+	background: white;
+    text-align: left;
+    border: solid;
+    border-color: #E0E0E0;
+    border-width: 0.1rem;
+    margin-bottom: 3rem;
+    height: 7rem;
+}
+
+.mightlike p{
+	padding: 2rem;
+	font-size: 2rem;
+	color: #BD4444;
+	font-family: "Quicksand";
+	margin-left: 3rem;
+}
+
+
+.modal-title {
+	font-family: "Quicksand";
+	    margin-left: 7rem;
+	    font-size: 2rem;
+
+
+}
+
+.modal-body{
+	margin: 1rem;
+	padding: 0rem;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
 
 
 body{
@@ -52,35 +274,94 @@ a:active {
 
 .orangebar{
 	background: #FFE9DD;
-	height: 1.5rem;
+	height: 2.5rem;
     text-align: center;
     font-size: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     width: 100%;
+
+}
+
+
+.mapimg{
+  
+}
+
+.shopby{
+	background: white;
+    text-align: center;
+    border: solid;
+    border-color: #E0E0E0;
+    border-width: 0.1rem;
+    margin-top: 3rem;
+    margin-bottom: -4rem;
+}
+
+.center{ 
+	align-content: center;
+  display: block;
+  width: 64%;
+}
+
+.maptext{
+	color: #BD4444;
+	font-size: 2rem;
+	text-align: center;
 }
 
 .orangetext{
 	color: #D08062;
 }
 
-/*logobar*/
+.centerbar{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.leftbar{
+display: inline-flex;
+    left: 73%;
+    align-items: center;
+    position: absolute;
+}
+
+.menu{
+	margin-right: 2rem;
+}
+/**/
+
+.wrapper{
+	box-sizing: border-box;
+}
+
+.logoleft {
+	display: flex;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
 
 .logobardesktop{
 	background-color: white;
 	display: flex;
-    justify-content: space-between;
+    justify-content: ;
     align-items: center;
     border-bottom: solid;color: #E0E0E0;
     border-width: 0.1rem;
-    width: 100%
+    width: 100%;
+    height: 5rem;
+    padding: 1rem;
+    position: relative;
 }
 
 .logobartext{
 	font-family: "Quicksand";
-	font-size: 1.5rem;
-	word-spacing: 2rem;
-	padding-top: 0.5rem;
+	font-size: 1.3rem;
+	padding: 0.5rem;
+	    display: flex;
+    position: absolute;
+    left: 35%;
 }
 
 .tablet{
@@ -91,6 +372,7 @@ a:active {
 }
 
 /* ---- mobile ---- */
+
 @media only screen and (max-width:700px){
 	.logobardesktop{
 		display: none;
@@ -136,7 +418,7 @@ a:active {
 }
 
 
-.bannerbg1{
+.bannerbg{
 	background-image: url("resources/image/bannerbg1.png");
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -147,13 +429,15 @@ a:active {
 
 #logo{
 	height: 6rem;
-	margin-left: 1rem; 
+	display: block;
+    position: relative;
 
 }
 
 .search{
   box-sizing: border-box;
-  font-size: 2rem;
+  font-size: 0.9rem;
+  margin-right: 2rem;
   
 }
 
@@ -162,28 +446,31 @@ input[type=text2]{
   margin: 0.5rem 0;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  height: 2rem;
 }
 
-.search form{
 
-
-}
 
 .myacc{
 	display: flex;
+
 }
 
 .myacctext{
 	font-family: "Quicksand";
-	font-size: 1.5rem;
-	padding-top: 0.7rem;
-	width: 9rem;
+	font-size: 1.2rem;
+	padding: 0.5rem;
+	  margin-right: 2rem;
+
 }
 
 #icon{
-	height: 2rem;
-	margin-right: 3rem;
-	padding-top: 0.1rem;
+	height: 1.5rem;
+	
+}
+.bagicon{
+	padding: 0.5rem;
+	
 }
 
 
@@ -208,36 +495,39 @@ input[type=text2]{
 .slide1 {
 display: flex;
 align-items:center;
-margin-left: 9rem;
+margin: 2rem;
+    padding: 2rem;
 }
 
 .slide1 img{
 width: 49%;
 	height: auto;
 margin-right: 5rem;
-margin-bottom: 3rem;
-margin-top: 3rem;
+
 }
 
 .slidecontent1 {
 	display: flex;
 	align-items: center;
+	padding: 4rem;
 }
 .slidecontent1 p{
 	color: #BD4444;
 	font-family: "Quicksand";
 	font-size: 2rem;
 	word-spacing: 0.5rem;
-	padding: : 3rem;
 }
 .slide2 {
 display: flex;
 align-items:center;
+margin: 2rem;
+    padding: 2rem;
 }
 
 .slidecontent2{
 	display: flex;
 	align-items: center;
+
 }
 .slidecontent2 p{
 	color: #BD4444;
@@ -245,13 +535,13 @@ align-items:center;
 	font-size: 2rem;
 	word-spacing: 0.5rem;
 padding: 4rem;
-margin-left: 6rem;
 }
 
 .slide2 img{
 width: 49%;
 	height: auto;
-margin-right: 8rem;
+padding: 2rem;
+margin-left: auto;
 }
 
 
@@ -265,22 +555,35 @@ margin-right: 8rem;
     border: solid;
     border-color: #E0E0E0;
     border-width: 0.1rem;
-    margin-top: 3rem;
     margin-bottom: 3rem;
+    height: 7rem;
 }
 
-.bestsellerstext{
+.bestsellerstext {
+	padding: 2rem;
+	}
+
+.bestsellerstext p {
+	
 	font-size: 2rem;
 	color: #BD4444;
+	font-family: "Quicksand";
+
+
 }
 
+#photo{
+	transition: 0.3s;
+}
 
-/* BestSellers Products */
-
+#photo:hover {
+    opacity: 0.7;
+}
 .column {
-  width: 20%;
+  width: 23%;
   padding: 1rem;
 text-align: center;
+
 }
 
 
@@ -295,39 +598,46 @@ text-align: center;
 
 .row p{
 	text-align: center;
+	padding: 1.5rem;
+	font-size: 1.3rem;
 }
 
 
 /* mailing list */
 
-
-
-.container {
+.mailcontainer{
+  justify-content: center;
+height: 30rem;
+}
+.mail {
 
   background-color: #f1f1f1;
   text-align: center;
-  height: 10rem;
+  height: 7rem;
   white-space: pre-line;
   width: 100%;
+  font-size: 1.5rem;
+  font-family: QuickSand;
+  font-weight: bold;
 }
 
-.container3{
-  background-color: white;
-  text-align: center;
-  height: auto;
+.submission{
+ text-align: center;
+  height: 7rem;
   white-space: pre-line;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
-  width: 100%
+  width: 100%;
+  font-size: 1.5rem;
 }
 
 
 input[type=text], input[type=submit] {
-  width: 30rem;
-  padding: 12px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+      width: 30rem;
+    padding: 12px;
+    margin: 1rem;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    height: 3rem;
+    font-size: 1rem;
 }
 
 input[type=checkbox] {
@@ -337,12 +647,22 @@ input[type=submit] {
   background-color: #FDEBE2;
   color: black;
   border: none;
+  height: 3.5rem;
 
 }
  
-.lablebox {
-	padding: 3rem;
-	margin-top: 4rem;
+.labletext {
+	padding: 1rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.labletext p {
+	margin-left: 1rem;
+	margin: 0rem;
+	padding: 0.6rem;
+	font-size: 0.5rem;
+	font-weight: none;
 }
 
 input[type=submit]:hover {
@@ -353,7 +673,7 @@ input[type=submit]:hover {
 
 
 .footercolumn {
-  width: 20%;
+  width: 30%;
   padding: 3rem;
 text-align: center;
 }
@@ -365,6 +685,9 @@ text-align: center;
 	align-items: center;
 }
 
+.footerinfo{
+	padding: 1rem;
+}
 #ig{
 	height: 2rem;
 	margin-top: 1rem;
@@ -380,6 +703,7 @@ width: 60%;
 .footertitle{
 border-bottom: solid;color: black;
 border-width: 0.1rem;
+padding: 0.5rem;
 
 }
 
@@ -399,25 +723,49 @@ border-width: 0.1rem;
 
 /* popoutpage*/
 
-.popout{
-	display: block;
-	    z-index: 20;
-    height: 100vw;
-    overflow-y: scroll
+
+
+.columnx {
+  width: 25%;
+  padding: 1rem;
+text-align: center;
 }
 
+.name {
+	margin-top: 1rem;
+    margin-bottom: 1rem
+}
 
-.title{
-	font-size: 3rem;
-	padding: 3rem 8rem;
-
+.rowx {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  margin-right: 4rem;
+  margin-left: 4rem;
+  margin-top: 1rem;
 }
 
 .info{
-	font-size: 1rem;
-	width: 45%; 
+	display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  margin-right: 4rem;
+  margin-left: 4rem;
 }
+.infocolumn{
+	width: 50%;
+	padding: 2.5rem;
+	text-align: left;
+	font-size: 1.2rem;
 
+}
+.imgcolumn{
+	width: 50%;
+	padding: 1.5rem;
+	text-align: center;
+}
 .more{
 	align-items: center;
 	font-size: 2rem;
@@ -452,19 +800,19 @@ border-width: 0.1rem;
 	padding: 0rem 8rem;
 }
 
-.popmap img{
-height: auto;
-		width: 90%;
-		}
 
 
 
+.exploretitle {
+	margin-top: 3rem;
+}
 
 
-.exploretitle{
-	justify-content: center;
-	padding: 3rem;
-	padding-bottom: 0rem;
+.exploretitle p{
+	font-size: 5rem;
+	font-family: "Quicksand";
+	text-align: center;
+	color: #BD4444;
 }
 
 .exploretitle img{
@@ -473,12 +821,22 @@ width: 63%;
   margin-left: auto;
   margin-right: auto;
 }
-
+.list{
+display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  margin-right: 4rem;
+  margin-left: 4rem;
+  margin-top: 1rem;
+}
 .vendors{
+
 	display: flex;
-	flex-direction: column;
-	text-align: center;
-	margin-bottom: 3rem;
+    flex-direction: column;
+    text-align: center;
+    margin: 10rem;
+    width: 13%;
 }
 
 .vendors p{
@@ -501,8 +859,25 @@ width: 63%;
 	html{
 		font-size: 2vw;
 	}
+.mobile-menu{
+	font-family: "Quicksand";
+
+}
+
+.exploretitle p {
+	font-size: 2rem;
+}
+
+.vendors{
+	    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem;
+    width: 26%;
+}
 
 	.marginclass{
+
 margin-left: 5rem;
     margin-right: 5rem;	}
 
@@ -518,36 +893,67 @@ margin-left: 5rem;
     }
 
     .column{
-    	width: 30%;
+    	width: 40%;
     	padding: 3rem;
     }
 
     .footercolumn{
-    	width: 18%;
+    	width: 30%;
+
     }
+
+    .slidecontent2  {
+    padding: 1rem;
+
+}
+.slidecontent2 p {
+    color: #BD4444;
+    font-family: "Quicksand";
+    font-size: 1rem;
+    word-spacing: 0.5rem;
+}
+
+.slide2 img {
+    width: 49%;
+    height: auto;
+    padding: 1rem;
+    margin-left: auto;
+}
+
+.slidecontent1  {
+    padding: 1rem;
+
+}
+.slidecontent1 p {
+    color: #BD4444;
+    font-family: "Quicksand";
+    font-size: 1rem;
+    word-spacing: 0.5rem;
+}
 
     .slide1{
     	margin-left: 2rem;
     	width: 95%
+    	padding: 0rem;
 
     }
     .slide2{
     	margin-right: 2rem;
     	width: 100%
+    	padding: 0rem;
     }
 
-    .slide2 img{
-    	margin: 0rem;
-    }
+  
+.slidecontent2  {
+    padding: 1rem;
 
-    .slidecontent2{
-    	width: 95%;
-
-    }
+}
 
     .slidecontent2 p{
     	padding: 0rem;
-    	margin-left: 2rem;
+    	margin-right: : 2rem;
+    font-size: 1rem;
+    word-spacing: 0.5rem;
     
     }
 
@@ -574,6 +980,37 @@ margin-left: 5rem;
 
 }
 
+.pdinfo{
+	padding: 0rem;
+}
+
+.pdtext {
+    width: 53%;
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.pdtext p{
+    font-size: 1.5rem;
+    font-family: "Quicksand";
+   }
+
+   .pdtext h3{
+    font-size: 1.5rem;
+   }
+
+   .pdes p {
+    text-align: left;
+    margin-bottom: 2rem;
+    font-size: 0.8rem;
+}
+
+.pdes {
+	width: 110%;
+}
+
+
 /* ---- tablet---- */
 
 @media only screen and (min-width: 700px) and (max-width:  1024px){
@@ -581,18 +1018,39 @@ margin-left: 5rem;
 		font-size: 1.5vw;
 	}
 
+
+	.exploretitle p {
+	font-size: 3rem;
+}
+
+.vendors{
+	    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem;
+    width: 26%;
+    margin-top: 6rem;
+}
+
 	.slide1{
-		margin-left: 5rem;
+		margin-right: 3rem;
 
 	}
 
+	.slidecontent1 {
+   padding: 0rem;
+} 
+
+.slidecontent1 p {
+   font-size: 1.5rem;
+}
+
 	.slide2{
-		margin-right: 5rem;
+		margin-right: 3rem;
 
 	}
 
 	.slidecontent2 p{
-		margin-left: 4rem;
 		padding: 1rem;
 	}
 
@@ -600,17 +1058,55 @@ margin-left: 5rem;
 	margin-right: 0rem;
 }
 
+
+.slidecontent2 p {
+   font-size: 1.5rem;
+}
 .footercolumn {
-    width: 18%;
+    width: 30%;
+}
+
+.row p {
+    
+    font-size: 1rem;
+}
+
+.tablet ul{
+	display: flex;
+    justify-content: space-around;
+    align-items: center
 }
 
 
+.menu{
+	font-family: "Quicksand";
+}
 
+.pdtext {
+    width: 57%;
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
 
+.pdtext p{
+    font-size: 1.5rem;
+    font-family: "Quicksand";
+   }
 
+   .pdtext h3{
+    font-size: 1.5rem;
+   }
 
+   .pdes p {
+    text-align: left;
+    margin-bottom: 2rem;
+    font-size: 0.8rem;
+}
 
-
+.pdes {
+	width: auto;
+}
 
 
 
