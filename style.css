@@ -301,7 +301,7 @@ a:active {
 .center{ 
 	align-content: center;
   display: block;
-  width: 64%;
+height: 30rem;
 }
 
 .maptext{
@@ -370,10 +370,18 @@ display: inline-flex;
 .mobile{
 	display: none;
 }
+.mobile-vendors{
+  display: none;
+}
 
 /* ---- mobile ---- */
 
 @media only screen and (max-width:700px){
+
+  .vednors{
+    display: none;
+  }
+
 	.logobardesktop{
 		display: none;
 	}
@@ -392,10 +400,16 @@ display: inline-flex;
 		justify-content: space-around;
 		align-items: center;
 	}
-	}
+}
+
 
 /* ---- tablet nav---- */
 @media only screen and (min-width: 700px) and (max-width:  1024px){
+
+  .vednors{
+    display: none;
+  }
+
 	.logobardesktop{
 		display: none;
 	}
@@ -835,8 +849,7 @@ display: flex;
 	display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 10rem;
-    width: 13%;
+    margin: 8rem;
 }
 
 .vendors p{
@@ -864,16 +877,21 @@ display: flex;
 
 }
 
+
+.mobile-vendors{
+  display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem;
+    width: 42rem;
+    margin-top: 4rem;
+}
+
 .exploretitle p {
 	font-size: 2rem;
 }
 
-.vendors{
-	    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 2rem;
-    width: 26%;
+.vendors{ display: none;
 }
 
 	.marginclass{
@@ -1018,7 +1036,9 @@ margin-left: 5rem;
 		font-size: 1.5vw;
 	}
 
-
+.mobile-vendors{
+  display: none;
+}
 	.exploretitle p {
 	font-size: 3rem;
 }
