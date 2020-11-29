@@ -1,9 +1,17 @@
 html{
-	font-family: Gujarati Sangam MN;
+	font-family: Helvetica Neue;
 	font-size: 1vw;
 }
 
-
+@font-face{
+  font-family: "Quicksand";
+  src: url("resources/font/Quicksand_Book.otf");
+}
+@font-face{
+  font-family: "Quicksand_Bold";
+  src: url("resources/font/Quicksand_Bold.otf");
+  font-weight: bold;
+}
 
 
 
@@ -244,10 +252,7 @@ width: 100%;
   overflow-x:hidden;  
  }
 
-@font-face{
-	font-family: "Quicksand";
-	src: url(resources/font/Quicksand_Book.woff) format('truetype');
-}
+
 
 
 a {
@@ -262,18 +267,22 @@ a:visited {
 }
 
 a:hover {
-  text-decoration: underline;
-  color: #BD4444;
+  text-decoration: none;
+  color: #dc7e46;
 }
 
 a:active {
   text-decoration: underline;
 }
 
+
+
+
+
 /* topbar */
 
 .orangebar{
-	background: #FFE9DD;
+	background: #f7ede7;
 	height: 2.5rem;
     text-align: center;
     font-size: 1rem;
@@ -311,7 +320,7 @@ height: 30rem;
 }
 
 .orangetext{
-	color: #D08062;
+	color: #000000;
 }
 
 .centerbar{
@@ -353,7 +362,10 @@ display: inline-flex;
     height: 5rem;
     padding: 1rem;
     position: relative;
+    z-index: 1;
 }
+
+
 
 .logobartext{
 	font-family: "Quicksand";
@@ -362,6 +374,17 @@ display: inline-flex;
 	    display: flex;
     position: absolute;
     left: 35%;
+    font-weight: bolder;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .webcontent {
+  padding-top: 150px;
 }
 
 .tablet{
@@ -392,7 +415,7 @@ display: inline-flex;
 		display: block;
 		height: 3rem;
 		width: 100%;
-		background-color: #FF8750;
+		background-color: white;
 		padding: 0.5rem;
 	}
 	.mobile ul{
@@ -420,7 +443,7 @@ display: inline-flex;
 		display: block;
 		height: 3rem;
 		width: 100%;
-		background-color: #FFE9DD;
+		background-color: white;
 		text-align: center;
 		padding: 0.5rem;
 	}
@@ -475,6 +498,7 @@ input[type=text2]{
 	font-size: 1.2rem;
 	padding: 0.5rem;
 	  margin-right: 2rem;
+    font-weight: bold;
 
 }
 
@@ -507,83 +531,234 @@ input[type=text2]{
 /* slides */
 
 .slide1 {
-display: flex;
-align-items:center;
-margin: 2rem;
-    padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+  padding-bottom: 2rem;
+  margin: 4rem;
 }
 
-.slide1 img{
-width: 49%;
-	height: auto;
-margin-right: 5rem;
+.slidepic2 {
+  width: 40rem;
+    height: auto;
+    margin: 3rem;
 
 }
 
 .slidecontent1 {
-	display: flex;
-	align-items: center;
-	padding: 4rem;
+	 text-align: left;
+    width: 40rem;
+    margin: 3rem;
+    padding-top: 7rem;
 }
-.slidecontent1 p{
-	color: #BD4444;
-	font-family: "Quicksand";
-	font-size: 2rem;
-	word-spacing: 0.5rem;
+
+
+.shape{
+  margin: 3rem;
 }
 .slide2 {
-display: flex;
-align-items:center;
-margin: 2rem;
-    padding: 2rem;
-}
+      display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+  
+  }
+.slide2text{
 
+}
 .slidecontent2{
-	display: flex;
-	align-items: center;
 
-}
-.slidecontent2 p{
-	color: #BD4444;
-	font-family: "Quicksand";
-	font-size: 2rem;
-	word-spacing: 0.5rem;
-padding: 4rem;
+    text-align: left;
+    width: 40rem;
+    margin: 3rem;
+    padding-top: 5rem;
 }
 
-.slide2 img{
-width: 49%;
-	height: auto;
-padding: 2rem;
-margin-left: auto;
+.slidereadmore a {
+
+  font-family: "Quicksand";
+  font-size: 1.5rem;
+  font-weight: bolder;
+  
+
+}
+
+.slidereadmore {
+  padding-top: 3rem;
+}
+
+.slidedes{
+  width: 23rem;
+}
+
+.slide2title p{
+	 margin-bottom: 3.5rem;
+  font-family: "Quicksand";
+  font-size: 3rem;
+}
+
+.slidepic1 {
+    width: 40rem;
+    height: auto;
+    margin: 3rem;
 }
 
 
+
+/*cover*/
+.cover{
+  width: 50rem;
+}
+.coverslide {
+display: flex;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+}
+
+.readmore{
+  margin-top: 11rem;
+}
+.readmore a {
+
+  font-family: "Quicksand";
+  font-size: 1.5rem;
+  font-weight: bolder;
+  border-bottom:solid;
+  border-width: 0.1rem;
+  width: 8rem;
+
+}
+/*explorevendors*/
+.exploreslide{
+  align-items: center;
+    background: #f7ede7;
+    width: 100%;
+    height: 26rem;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+}
+.explorevandor{
+    text-align: center;
+}
+
+
+.exploretext p {
+ padding: 1rem;
+    font-size: 4rem;
+    font-family: "Quicksand";
+    font-weight: bolder;
+    padding-top: 4rem;
+
+}
+
+.exploredes p{
+padding-top: 1rem;
+font-size: 1.3rem;
+
+}
+
+.explorebtn{
+  padding-top: 3rem;
+  font-family: "Quicksand";
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.button{
+  padding-top: 2rem;
+  color: black;
+    border: 0;
+    padding: 1rem;
+      transition-duration: 0.4s;
+      border-bottom:solid;
+  border-width: 0.1rem;
+  width: 8rem;
+
+
+}
+ .button:hover {background-color: #efefef; color: black;}
+ .button2:hover {background-color: white; color: black;}
+
+.button2{
+  padding-top: 2rem;
+  color: black;
+    border: 0;
+    padding: 1rem;
+      transition-duration: 0.4s;
+      border-bottom:solid;
+  border-width: 0.1rem;
+  width: 8rem;
+
+}
+.covertitle{
+  background: white;
+    text-align: left;
+    border: solid;
+    border-color: #ffffff;
+    border-width: 0.1rem;
+    margin-bottom: 4rem;
+width: 44rem;
+    margin-left: 6rem;
+    margin-top: 10rem;
+}
+
+.covertext {
+  margin-bottom: 5rem;
+   }
+
+.covertext p {
+  
+  font-size: 3rem;
+    font-family: "Quicksand";
+    font-weight: bold;
+
+}
+
+.coverdes {
+  width: 32rem;
+}
+
+.coverdes p {
+font-size: 1.3rem;
+}
 
 /* BestSellers */
 
 
 .BestSellers{
-	background: white;
+      background: #f7ede7;
     text-align: center;
     border: solid;
-    border-color: #E0E0E0;
+    border-color: #ffffff;
     border-width: 0.1rem;
-    margin-bottom: 3rem;
-    height: 7rem;
+    height: 26rem;
+    margin-top: 6rem;
+    
 }
 
 .bestsellerstext {
 	padding: 2rem;
+  padding-top: 4rem;
 	}
 
 .bestsellerstext p {
 	
-	font-size: 2rem;
-	color: #BD4444;
+	font-size: 4rem;
 	font-family: "Quicksand";
+  font-weight: bolder;
+}
+.bestsellerdes p{
+  font-size: 1.3rem;
+}
 
+.arrow{
+  padding-top: 1.5rem;
+}
 
+.arrow img{
+  width: 5rem;
 }
 
 #photo{
@@ -606,8 +781,8 @@ text-align: center;
   justify-content: center;
   flex-wrap: wrap;
   flex-flow: wrap;
-  margin-right: 5rem;
-  margin-left: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 .row p{
@@ -616,7 +791,16 @@ text-align: center;
 	font-size: 1.3rem;
 }
 
+.bestmore {
 
+  background-color: white;
+  text-align: center;
+  height: 7rem;
+  width: 100%;
+  font-size: 1.5rem;
+  font-family: QuickSand;
+  font-weight: bold;
+}
 /* mailing list */
 
 .mailcontainer{
@@ -652,18 +836,26 @@ input[type=text], input[type=submit] {
     box-sizing: border-box;
     height: 3rem;
     font-size: 1rem;
+
 }
 
 input[type=checkbox] {
 }
 
 input[type=submit] {
-  background-color: #FDEBE2;
+  padding-top: 2rem;
   color: black;
-  border: none;
-  height: 3.5rem;
+    border: 0;
+    padding: 1rem;
+      transition-duration: 0.4s;
+      border-bottom:solid;
+  border-width: 0.1rem;
+  width: 8rem;
+  background-color: white;
 
 }
+
+
  
 .labletext {
 	padding: 1rem;
@@ -681,6 +873,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
   opacity: 0.8;
+  background-color: #efefef;
 }
 
 /* footer */
@@ -689,14 +882,16 @@ input[type=submit]:hover {
 .footercolumn {
   width: 30%;
   padding: 3rem;
-text-align: center;
 }
 
 .footer{
-	background-color: #FDEBE2;
+  border-top: solid;
+    border-width: thin;
+    border-color: #f1f1f1;
+    background-color: #ffffff;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+  align-items: center;
 }
 
 .footerinfo{
@@ -715,9 +910,13 @@ width: 60%;
 }
 
 .footertitle{
-border-bottom: solid;color: black;
-border-width: 0.1rem;
-padding: 0.5rem;
+font-weight: bold;
+    border-bottom: solid;
+    color: black;
+    border-width: 0.1rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-family: 'Quicksand';
 
 }
 
@@ -826,7 +1025,7 @@ text-align: center;
 	font-size: 5rem;
 	font-family: "Quicksand";
 	text-align: center;
-	color: #BD4444;
+	color: black;
 }
 
 .exploretitle img{
@@ -887,8 +1086,13 @@ display: flex;
     margin-top: 4rem;
 }
 
-.exploretitle p {
-	font-size: 2rem;
+.exploretext p {
+	font-size: 4rem;
+}
+
+.exploredes p{
+
+padding: 0 10rem;
 }
 
 .vendors{ display: none;
@@ -911,12 +1115,17 @@ margin-left: 5rem;
     }
 
     .column{
-    	width: 40%;
-    	padding: 3rem;
+    	width: 45%;
+    	padding: 2rem 2rem 0rem;
     }
 
     .footercolumn{
-    	width: 30%;
+    	width: 33%;
+
+    }
+
+    .mail{
+      height: 8rem;
 
     }
 
@@ -924,56 +1133,27 @@ margin-left: 5rem;
     padding: 1rem;
 
 }
-.slidecontent2 p {
-    color: #BD4444;
-    font-family: "Quicksand";
-    font-size: 1rem;
-    word-spacing: 0.5rem;
+.slidepic2{
+
+    margin: 3rem;
 }
 
-.slide2 img {
-    width: 49%;
-    height: auto;
-    padding: 1rem;
-    margin-left: auto;
-}
+
 
 .slidecontent1  {
     padding: 1rem;
 
 }
-.slidecontent1 p {
-    color: #BD4444;
-    font-family: "Quicksand";
-    font-size: 1rem;
-    word-spacing: 0.5rem;
-}
 
-    .slide1{
-    	margin-left: 2rem;
-    	width: 95%
-    	padding: 0rem;
 
-    }
-    .slide2{
-    	margin-right: 2rem;
-    	width: 100%
-    	padding: 0rem;
-    }
-
+    
   
 .slidecontent2  {
     padding: 1rem;
 
 }
 
-    .slidecontent2 p{
-    	padding: 0rem;
-    	margin-right: : 2rem;
-    font-size: 1rem;
-    word-spacing: 0.5rem;
-    
-    }
+   
 
     .info{
     	width: 100%;
@@ -987,7 +1167,7 @@ margin-left: 5rem;
 		display: block;
 		height: 3rem;
 		width: 100%;
-		background-color: #FFE9DD;
+		background-color: white;
 		padding: 0.5rem;
 	}
 	.mobile ul{
@@ -1052,10 +1232,7 @@ margin-left: 5rem;
     margin-top: 6rem;
 }
 
-	.slide1{
-		margin-right: 3rem;
-
-	}
+	
 
 	.slidecontent1 {
    padding: 0rem;
@@ -1065,10 +1242,7 @@ margin-left: 5rem;
    font-size: 1.5rem;
 }
 
-	.slide2{
-		margin-right: 3rem;
-
-	}
+	
 
 	.slidecontent2 p{
 		padding: 1rem;
@@ -1083,7 +1257,7 @@ margin-left: 5rem;
    font-size: 1.5rem;
 }
 .footercolumn {
-    width: 30%;
+    width: 33%;
 }
 
 .row p {
