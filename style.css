@@ -365,7 +365,7 @@ display: flex;
 flex-flow: wrap;
 flex-wrap: wrap;
 width: 100%;
-    z-index: 1;
+z-index: 1;
 
 }
 
@@ -446,11 +446,7 @@ width: 100%;
 
 	}
 
-  .webcontent{ z-index:1;
-    padding:0;
-    -webkit-overflow-scrolling:touch;
-    overflow:auto;
-}
+  
 
 }
 /* ---- tablet nav---- */
@@ -1108,16 +1104,6 @@ display: flex;
 .vendors p{
 	font-size: 1.5rem;
 	font-family: QuickSand;
-}
-.displayPopout{
-	top: 0px;
-    left: 0px;
-    position: fixed;
-    background: white;
-    display: none;
-        z-index: 20;
-    height: 100vw;
-    overflow-y: scroll
 }
 
 /* ---- mobile ---- */
