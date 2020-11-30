@@ -14,25 +14,28 @@
 
 <body>
 
-<div class="orangebar">
+<div class="header" id="myHeader">
+	<div class="orangebar">
 			<span class="orangetext">We donate 1% of our sales</span>
 		</div>
-
-
-<div class="logobardesktop">
-        <img src="resources/image/therapylogo.png" id="logo">
+			<div class="logobardesktop">
+       <a href="index.html"><img src="resources/image/therapylogo.png" id="logo"></a>
 		<div class="logobartext">
 			<div class="menu">
-				<a href="index.html">Home</a>
-			</div>
+		    <a href="#">Gift</a>
+		</div>
+		<div class="menu">
+		    <a href="#">Jewelry</a>
+		</div>
+		<div class="menu">
+		    <a href="#">Beauty</a>
+		</div>
 			<div class="menu">
 			<a href="Explore.html">Explore</a>
 		</div>
+		
 		<div class="menu">
-		    <a href="#">Best Sellers</a>
-		</div>
-		<div class="menu">
-		    <a href="#">Career</a>
+		    <a href="#"style="color: orange;">Careers</a>
 		</div>
 		</div>
 
@@ -44,38 +47,52 @@
 			    <a href="#">My Account</a>
 			</div>
 <div class="bagicon">
-	<img src="resources/image/bag.png" id="icon">
+	<a href="#"><img src="resources/image/cart.png" id="icon">
 </div>
 		</div>		
 </div>
-</div>
-</div>
-</div>
-</div>
-
-
-<nav class="mobile">
+<nav class="mobile" id="Header" >
 		<ul class="mobile-menu" role="presentation">
-			<a href="index.html">Home</a>
-			<a href="Explore.html">Explore</a>
-			<a href>My Account</a>
-			<a href>Bag</a>
-			<a href>Career</a>
-		</ul>
-	</nav>
-
-<nav class="tablet">
-		<ul class="menu" role="presentation">
-			<a href="index.html">Home</a>
-			<a href="Explore.html">Explore</a>
-			<a href>My Account</a>
-			<a href>Bag</a>
-			<a href>Career</a>
+						<div class="menuleft"><a href><img src="resources/image/hamburger.png" style="width: 3rem;"></a>
+<a href="Explore.html"><img src="resources/image/exploreicon.png" style="width: 3.1rem; margin-right: 0.3rem;"></a>		</div>
+        <div class="barlogo">
+		<a href="index.html"><img src="resources/image/therapylogo.png" style="width: 15rem;"></a>
+</div>
+		<div class="logoright">
+		
+			<a href><img src="resources/image/user.png" style="width: 3rem;"></a>
+					    
+			<a href><img src="resources/image/cart.png" style="width: 3rem;"></a>
+		</div>
 
 		</ul>
 	</nav>
+	<nav class="tablet" id="Header">
+		<ul class="tablet-menu" role="presentation">
+			<div class="menuleft"><a href><img src="resources/image/hamburger.png" style="width: 4.5rem;"></a>
+			<a href="Explore.html"><img src="resources/image/exploreicon.png" style="width: 4.5rem; margin-right: 0.3rem;"></a>
+		</div>
+        <div class="barlogo">
+		<a href="index.html"><img src="resources/image/therapylogo.png" style="width: 20rem;"></a>
+</div>
+		<div class="logoright">
+			
+			<a href><img src="resources/image/user.png" style="width: 4.5rem;"></a>
+					    
+			<a href><img src="resources/image/cart.png" style="width: 4.5rem;"></a>
+		</div>
+		</ul>
+	</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 
+
+
+<div class="webcontent">
 <div class="exploretitle">
 			<p>Explore our vandors by map</p>
 
@@ -87,7 +104,6 @@
 			<p>2. New York </p>
 				<p> 3. Arizona </p>
 					<p> 4. Illinois </p>
-				</div>
 
 		</ul>
 	</nav>
@@ -138,24 +154,22 @@ Brooklyn Charm opened its storefront in 2010 in the heart of the Williamsburg ar
 	          <h4 class="modal-title">Products from this vendor</h4>
 </div>
 
-<div class="Products">
-	<div class="rowx">
-  <div class="columnx">
-    <img src="resources/image/p1.JPG" id="p1" style="width:100%"> <p style="margin-top: 1rem;">Round Necklace</p>
+<div class="row">
+  <div class="column">
+    <img id=photo src="resources/image/p1.JPG" id="p1" style="width:100%"> <p>Round Necklace</p>
 
   </div>
-  <div class="columnx">
-    <a href="product_ring.html"><img src="resources/image/p2.JPG" id="p2"  style="width:100%"> <p style="margin-top: 
-    1rem;">Ring</p></a>
-  </div>
-  <div class="columnx">
-    <img src="resources/image/p3.JPG" id="p3" style="width:100%"><p style="margin-top: 1rem;">Earing</p>
+  <div class="column">
+    <a href="product_ring.html"><img id=photo src="resources/image/p2.JPG" id="p2"  style="width:100%"> <p>Ring</p>
+  </div></a>
+  <div class="column">
+    <img id=photo src="resources/image/p3.JPG" id="p3" style="width:100%"><p>Earing</p>
 </div>
-<div class="columnx">
-    <img src="resources/image/p4.JPG" id="p4" style="width:100%"><p style="margin-top: 1rem;">Round earing</p>
+<div class="column">
+    <img id=photo src="resources/image/p4.JPG" id="p4" style="width:100%"><p>Round earing</p>
+
 </div>
 </div>
-        </div>
         
         <!-- Modal footer -->
         <div class="modal-footer">
@@ -168,10 +182,8 @@ Brooklyn Charm opened its storefront in 2010 in the heart of the Williamsburg ar
   </div>
 </div>
 </div>
-		
-	
-
-				<footer>
+</div>	
+<footer>
 		<div class="footer ">
  <div class="footerrow">
  	<div class="footercolumn">	
@@ -215,6 +227,22 @@ Brooklyn Charm opened its storefront in 2010 in the heart of the Williamsburg ar
 			<img src="resources/image/therapylogo.png">
 </div>
 	</footer>
+<script>
 
+window.onscroll = function() {myFunction()};
+
+var logobardesktop = document.getElementById("myHeader");
+
+var sticky = logobardesktop.offsetTop;
+
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    logobardesktop.classList.add("sticky");
+  } else {
+    logobardesktop.classList.remove("sticky");
+  }
+}
+</script>
 	
 </body>

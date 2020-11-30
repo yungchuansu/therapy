@@ -17,25 +17,31 @@
 
 <body>
 
-<div class="orangebar">
+
+
+
+<div class="header" id="myHeader">
+	<div class="orangebar">
 			<span class="orangetext">We donate 1% of our sales</span>
 		</div>
-
-
-<div class="logobardesktop" id="myHeader" >
-        <img src="resources/image/therapylogo.png" id="logo">
+			<div class="logobardesktop">
+       <a href="index.html"><img src="resources/image/therapylogo.png" id="logo"></a>
 		<div class="logobartext">
 			<div class="menu">
-				<a href="index.html">Home</a>
-			</div>
+		    <a href="#">Gift</a>
+		</div>
+		<div class="menu">
+		    <a href="#">Jewelry</a>
+		</div>
+		<div class="menu">
+		    <a href="#">Beauty</a>
+		</div>
 			<div class="menu">
 			<a href="Explore.html">Explore</a>
 		</div>
+		
 		<div class="menu">
-		    <a href="#">Best Sellers</a>
-		</div>
-		<div class="menu">
-		    <a href="#">Career</a>
+		    <a href="#" style="color: orange;">Careers</a>
 		</div>
 		</div>
 
@@ -47,36 +53,49 @@
 			    <a href="#">My Account</a>
 			</div>
 <div class="bagicon">
-	<img src="resources/image/bag.png" id="icon">
+	<a href="#"><img src="resources/image/cart.png" id="icon">
 </div>
 		</div>		
 </div>
-</div>
-</div>
-</div>
-</div>
-
-
-<nav class="mobile">
+<nav class="mobile" id="Header" >
 		<ul class="mobile-menu" role="presentation">
-			<a href="index.html">Home</a>
-			<a href="Explore.html">Explore</a>
-			<a href>My Account</a>
-			<a href>Bag</a>
-			<a href>Career</a>
-		</ul>
-	</nav>
-
-<nav class="tablet">
-		<ul class="menu" role="presentation">
-			<a href="index.html">Home</a>
-			<a href="Explore.html">Explore</a>
-			<a href>My Account</a>
-			<a href>Bag</a>
-			<a href>Career</a>
+						<div class="menuleft"><a href><img src="resources/image/hamburger.png" style="width: 3rem;"></a>
+<a href="Explore.html"><img src="resources/image/exploreicon.png" style="width: 3.1rem; margin-right: 0.3rem;"></a>		</div>
+        <div class="barlogo">
+		<a href="index.html"><img src="resources/image/therapylogo.png" style="width: 15rem;"></a>
+</div>
+		<div class="logoright">
+		
+			<a href><img src="resources/image/user.png" style="width: 3rem;"></a>
+					    
+			<a href><img src="resources/image/cart.png" style="width: 3rem;"></a>
+		</div>
 
 		</ul>
 	</nav>
+	<nav class="tablet" id="Header">
+		<ul class="tablet-menu" role="presentation">
+			<div class="menuleft"><a href><img src="resources/image/hamburger.png" style="width: 4.5rem;"></a>
+			<a href="Explore.html"><img src="resources/image/exploreicon.png" style="width: 4.5rem; margin-right: 0.3rem;"></a>
+		</div>
+        <div class="barlogo">
+		<a href="index.html"><img src="resources/image/therapylogo.png" style="width: 20rem;"></a>
+</div>
+		<div class="logoright">
+			
+			<a href><img src="resources/image/user.png" style="width: 4.5rem;"></a>
+					    
+			<a href><img src="resources/image/cart.png" style="width: 4.5rem;"></a>
+		</div>
+		</ul>
+	</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
 
 
 <div class="webcontent">
@@ -95,7 +114,7 @@
 	We strive to be inclusive, providing a little something for everyone from all walks of life. </p>
 </div>
 	<div class="readmore">
-		<a class="button" href>Our Story</a>
+		<a class="button"href="index.html#">Our Story</a>
 	</div>
 </div>
 </div>
@@ -271,16 +290,13 @@
 </div>
 <script>
 
-	// When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
-// Get the header
 var logobardesktop = document.getElementById("myHeader");
 
-// Get the offset position of the navbar
 var sticky = logobardesktop.offsetTop;
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+
 function myFunction() {
   if (window.pageYOffset > sticky) {
     logobardesktop.classList.add("sticky");
@@ -288,8 +304,8 @@ function myFunction() {
     logobardesktop.classList.remove("sticky");
   }
 }
-	</script>
-
+</script>
+	
 
 
 </body>

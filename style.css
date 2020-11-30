@@ -129,24 +129,21 @@ img {vertical-align: middle;}
 	display: flex;
   flex-wrap: wrap;
   flex-flow: wrap;
-    margin: 3rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
+  margin: 5rem;
+
 
 }
 
 .pdpic{
-width: 35%;
-margin: 1rem;
-	text-align: left;
-	font-size: 1.2rem;
-	padding-top: 2rem;
+width: 31%;
+
 }
 .pdtext{
- width: 60%;
-    padding: 2rem;
+
+ width: 65%;
     margin: 1rem;
     text-align: center;
+    padding-left: 3rem;
 }
 
 .ptitle{
@@ -161,19 +158,24 @@ margin: 1rem;
 .ptitle h3{
 	margin-top: 1rem;
 	margin-bottom: 1rem;
+  font-family: "Quicksand"
 	
 }
 
 .ptitle p{
-	font-size: 1rem;
+	font-size: 3rem;
+  font-family: "Quicksand"
+  font-weight: bold;
 }
 
 .pdes{
-	width: 76%;
+	width: 88%;
 }
 .pdes p{
+  font-size: 1.3rem;
 	text-align: left;
 	margin-bottom: 2rem;
+  font-family: Helvetica Neue;
 
 }
 
@@ -183,15 +185,19 @@ text-align: left;
 }
 
 #cartext{
-	width: 3rem;
+	width: 4rem;
     margin-bottom: 1rem;
-    height: 2rem;
+    height: 3rem;
     text-align: center;
-        margin-right: 1rem;
-        margin: 0rem;
+    margin: 0rem;
+    margin-right: 1.5rem;
 
 }
+.addbtn{
 
+  padding-top: 2rem;
+  text-align: left;
+}
 #bt{
 
 margin-left: 1rem;
@@ -205,15 +211,17 @@ margin-left: 1rem;
     border-color: #E0E0E0;
     border-width: 0.1rem;
     margin-bottom: 3rem;
-    height: 7rem;
+    height: 10rem;
 }
 
 .mightlike p{
 	padding: 2rem;
-	font-size: 2rem;
-	color: #BD4444;
+	font-size: 2.5rem;
+	color: black;
 	font-family: "Quicksand";
-	margin-left: 3rem;
+	margin: 1rem;
+  font-weight: bold;
+  margin-left: 3rem;
 }
 
 
@@ -234,6 +242,7 @@ margin-left: 1rem;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  margin: 1rem;
 }
 
 #myImg:hover {opacity: 0.7;}
@@ -351,6 +360,15 @@ display: inline-flex;
     flex-grow: 1;
 }
 
+.header{
+display: flex;
+flex-flow: wrap;
+flex-wrap: wrap;
+width: 100%;
+    z-index: 1;
+
+}
+
 .logobardesktop{
 	background-color: white;
 	display: flex;
@@ -362,7 +380,6 @@ display: inline-flex;
     height: 5rem;
     padding: 1rem;
     position: relative;
-    z-index: 1;
 }
 
 
@@ -381,11 +398,15 @@ display: inline-flex;
   position: fixed;
   top: 0;
   width: 100%
+
 }
 
 .sticky + .webcontent {
   padding-top: 150px;
+
 }
+
+
 
 .tablet{
 	display: none; 
@@ -416,16 +437,22 @@ display: inline-flex;
 		height: 3rem;
 		width: 100%;
 		background-color: white;
-		padding: 0.5rem;
+
 	}
 	.mobile ul{
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
 		align-items: center;
+
 	}
+
+  .webcontent{ z-index:1;
+    padding:0;
+    -webkit-overflow-scrolling:touch;
+    overflow:auto;
 }
 
-
+}
 /* ---- tablet nav---- */
 @media only screen and (min-width: 700px) and (max-width:  1024px){
 
@@ -440,18 +467,56 @@ display: inline-flex;
 		display: none;
 	}
 	.tablet{
-		display: block;
-		height: 3rem;
-		width: 100%;
-		background-color: white;
-		text-align: center;
-		padding: 0.5rem;
-	}
-	.tablet li a{
-		color: white;
-		text-decoration: none;
-		font-size: 1.5rem;
-	}
+    display: flex;
+    height: 6rem;
+    background-color: white;
+    padding: 0.5rem;
+    position: relative;
+    border-bottom: solid; color: #f1f1f1;
+    border-width: thin;
+    width: 100%;
+    
+  }
+
+   .tablet img{
+    padding: 0px 5px;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: center;
+  }
+
+  .tablet ul{
+    align-items: center;
+  }
+
+  .tablet ul{
+   max-width: 1270px;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    place-content: center space-between;
+    -webkit-box-pack: justify;
+    padding: 0px 8px;
+
+  }
+
+.barlogo{
+  display: block;
+    position: absolute;
+    left: 40%
+}
+ 
+.orangebar{
+  height: 3.5rem;
+}
+ul{
+      padding-inline-start: 0rem;
+
+}
+	
 }
 
 
@@ -497,13 +562,13 @@ input[type=text2]{
 	font-family: "Quicksand";
 	font-size: 1.2rem;
 	padding: 0.5rem;
-	  margin-right: 2rem;
+	  margin-right: 1rem;
     font-weight: bold;
 
 }
 
 #icon{
-	height: 1.5rem;
+	height: 2rem;
 	
 }
 .bagicon{
@@ -885,6 +950,7 @@ input[type=submit]:hover {
 }
 
 .footer{
+  margin-top: 2rem;
   border-top: solid;
     border-width: thin;
     border-color: #f1f1f1;
@@ -938,26 +1004,14 @@ font-weight: bold;
 
 
 
-.columnx {
-  width: 25%;
-  padding: 1rem;
-text-align: center;
-}
+
 
 .name {
 	margin-top: 1rem;
     margin-bottom: 1rem
 }
 
-.rowx {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-flow: wrap;
-  margin-right: 4rem;
-  margin-left: 4rem;
-  margin-top: 1rem;
-}
+
 
 .info{
 	display: flex;
@@ -1071,19 +1125,83 @@ display: flex;
 	html{
 		font-size: 2vw;
 	}
+
+   .mobile{
+    display: flex;
+    height: 4rem;
+    background-color: white;
+    padding: 0.5rem;
+     border-bottom: solid; color: #f1f1f1;
+    border-width: thin;
+    position: relative;
+   
+    
+  }
+  .mobile ul{
+   max-width: 1270px;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    place-content: center space-between;
+    -webkit-box-pack: justify;
+    padding: 0px 8px;
+
+  }
+
+  .mobile img{
+    min-width: 3rem;
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: center;
+  }
+ul{
+      padding-inline-start: 0rem;
+
+}
+
+.menuleft{
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    margin-right: auto;
+}
+
+.logoright{
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    padding: 0px;
+}
+
 .mobile-menu{
 	font-family: "Quicksand";
 
 }
 
+.barlogo{
+  display: block;
+    position: absolute;
+    margin-left: 16rem;
+}
+
+.arrow img{
+  width: 3.5rem;
+}
 
 .mobile-vendors{
   display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 2rem;
+    margin: 1rem;
     width: 42rem;
     margin-top: 4rem;
+    font-size: 2rem;
 }
 
 .exploretext p {
@@ -1162,31 +1280,40 @@ margin-left: 5rem;
     .exploretitle img{
     	width: 100%;
     }
+    .exploretitle p{
+font-size: 3rem;    }
 
-    .mobile{
-		display: block;
-		height: 3rem;
-		width: 100%;
-		background-color: white;
-		padding: 0.5rem;
-	}
-	.mobile ul{
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-	}
-
-}
+   
 
 .pdinfo{
-	padding: 0rem;
+  padding: 0rem;
+  margin: 0rem;
 }
 
+
+
+   .pdtext h3{
+    font-size: 1.5rem;
+   }
+
+  
+
+.pdes {
+  width: 110%;
+}
+.pdinfo{
+  padding: 0rem;
+  justify-content: center;
+}
+#pdtitle {
+  font-size: 2.5rem;
+}
 .pdtext {
-    width: 53%;
-    padding: 2rem;
-    margin: 1rem;
+    width: 90%;
+    padding: 0rem;
+    margin: 2rem;
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 .pdtext p{
@@ -1202,12 +1329,19 @@ margin-left: 5rem;
     text-align: left;
     margin-bottom: 2rem;
     font-size: 0.8rem;
+    font-family: Helvetica Neue;
 }
 
 .pdes {
-	width: 110%;
+  width: 110%;
 }
 
+.pdpic{
+      width: 95%;
+    margin: 1rem;
+    font-size: 1.2rem;
+    padding: 0rem;
+}
 
 /* ---- tablet---- */
 
@@ -1215,7 +1349,10 @@ margin-left: 5rem;
 	html{
 		font-size: 1.5vw;
 	}
+ul{
+      padding-inline-start: 0rem;
 
+}
 .mobile-vendors{
   display: none;
 }
@@ -1265,43 +1402,27 @@ margin-left: 5rem;
     font-size: 1rem;
 }
 
-.tablet ul{
-	display: flex;
-    justify-content: space-around;
-    align-items: center
+.menuleft{
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    padding: 0px;
+}
+
+.logoright{
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    padding: 0px;
+}
+
+.tablet-menu{
+  font-family: "Quicksand";
+
 }
 
 
-.menu{
-	font-family: "Quicksand";
+#tabletlogo{
+  width: 30rem;
 }
-
-.pdtext {
-    width: 57%;
-    padding: 2rem;
-    margin: 1rem;
-    text-align: center;
 }
-
-.pdtext p{
-    font-size: 1.5rem;
-    font-family: "Quicksand";
-   }
-
-   .pdtext h3{
-    font-size: 1.5rem;
-   }
-
-   .pdes p {
-    text-align: left;
-    margin-bottom: 2rem;
-    font-size: 0.8rem;
-}
-
-.pdes {
-	width: auto;
-}
-
-
-
-
