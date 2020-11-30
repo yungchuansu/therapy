@@ -13,6 +13,14 @@ html{
   font-weight: bold;
 }
 
+.header{
+display: flex;
+flex-flow: wrap;
+flex-wrap: wrap;
+width: 100%;
+z-index: 1;
+
+}
 
 
 * {box-sizing: border-box}
@@ -360,14 +368,6 @@ display: inline-flex;
     flex-grow: 1;
 }
 
-.header{
-display: flex;
-flex-flow: wrap;
-flex-wrap: wrap;
-width: 100%;
-z-index: 1;
-
-}
 
 .logobardesktop{
 	background-color: white;
